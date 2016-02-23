@@ -1,0 +1,22 @@
+/* ==========================================================================
+                    Bootstrap all configurations e Components
+   ========================================================================== */
+   
+/* Site Mixins */
+@import "mixins";
+
+/* Global Variabels */
+@import "variables";
+
+/* Foundation Framework */
+@import "foundation";
+
+/* Site Fonts */
+@import "vendor/fonts/fonts.css";
+
+/* Carousel Plugin */
+@import "vendor/owlcarousel/owl.carousel.css";
+@import "vendor/owlcarousel/owl.theme.css";
+@import "vendor/owlcarousel/owl.transitions.css";
+
+@import "utilities";

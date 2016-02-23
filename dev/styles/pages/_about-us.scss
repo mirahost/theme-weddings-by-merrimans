@@ -1,0 +1,142 @@
+/* ==========================================================================
+                                Company About Us Page Styles
+   ========================================================================== */
+
+/**
+ * COMPONENTS SUMMARY
+ * 
+ * - Content Wrapper Component
+ * - Dashed Border Component
+ * - Stick Menu Component
+ * - Banner Component
+ */
+
+/* Content Wrapper Component
+   ========================================================================== */
+.content-wrapper {
+    /* Display & Box Model */
+    padding: rem-calc(20) rem-calc(100);
+
+    @include breakpoint(medium only)
+    {
+        padding: rem-calc(20) rem-calc(50);
+    }
+
+    @include breakpoint(small only)
+    {
+        padding: rem-calc(20) rem-calc(15);
+    }
+
+    /* Font */
+    font: {
+        family: $courier-new;
+    }
+
+    /* Color */
+    background: {
+        image: url(../img/bg_logo_gray.png);
+        repeat: no-repeat;
+        position: 95% 70%;
+    }
+
+
+    h1 {
+        /* Display & Box Model */
+        margin: rem-calc(35) 0;
+
+        /* Font */
+        font: {
+            family: $sackers-heavy-roman;
+            size: rem-calc(24);
+        }
+
+        /* Text */
+        text: {
+            transform: uppercase;
+        }
+
+        /* Color */
+        color: #6b5c20;
+    }
+
+    p {
+        /* Display & Box Model */
+        margin-bottom: rem-calc(50);
+    }
+}
+
+/* Dashed Border Component
+   ========================================================================== */
+
+.dashed {
+    /* Display & Box Model */
+    border: none;
+    width: 100%;
+    height: 2px;
+
+    /* Color */
+    background: url(../img/dashed.png);
+    background-repeat: repeat-x;
+}
+
+/* Stick Menu Component
+   ========================================================================== */
+
+.stick-menu {
+
+    /* Font */
+    font: {
+        family: $sackers-gothic-std-light;
+        size: rem-calc(18);
+    } 
+
+    /* Text */
+    text: {
+        align: center;
+    }
+
+    /* Color */
+    color: #404041;
+
+    a {
+        /* Color */
+        color: #404041;
+    }
+
+    ul, li {
+        /* Display & Box Model */
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        /* List */
+        list-style: none;
+    }
+
+    li:after {
+        /* Display & Box Model */
+        padding: 0 0 0 rem-calc(7);
+
+        /* Other */
+        content: '|';
+    }
+
+    li:last-child:after {
+        /* Other */
+        content: none;
+    }
+}
+
+#banner {
+    margin-bottom: 1px;
+
+    .item img {
+        /* Display & Box Model */
+        max-height: rem-calc(315) !important;
+        height: 100%;
+        width: 100%;
+
+        /* Other */
+        object-fit: cover;
+    }
+}

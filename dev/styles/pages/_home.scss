@@ -1,0 +1,39 @@
+/* ==========================================================================
+                            Home Page SCSS
+   ========================================================================== */
+
+/**
+ * COMPONENTS SUMMARY
+ * 
+ * - Fixing elephant carousel
+ * - Fixing Owl Panel 
+ *
+ */
+
+ /* Fixing elephant carousel
+   ========================================================================== */
+.home .elephant-carousel,
+.home .elephant-carousel .item img  {
+    /* Positioning */
+    min-height: rem-calc(600);
+}
+
+ /* Fixing Owl Panel 
+   ========================================================================== */
+.owl-panel-info {
+    /* Display & Box Model */
+    width: rem-calc(300);
+
+    /* Font */
+    font: {
+        family: $courier-new;
+    }
+
+    /* Text */
+    text: {
+        align: center;
+    }
+
+    /* Color */
+    color: #fff;
+}

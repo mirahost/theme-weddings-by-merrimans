@@ -1,0 +1,301 @@
+/* ==========================================================================
+                                Site Footer Styles
+   ========================================================================== */
+
+/**
+ * COMPONENTS SUMMARY
+ * 
+ * - Footer Navigation Component
+ * - Copyright & Social Medias Component
+ *
+ */
+
+#site_footer {
+    .site-logo {
+        /* Text */
+        text-align: center;
+        margin-bottom: rem-calc(67);
+    }
+}
+
+/* Footer Navigation Component
+   ========================================================================== */
+.footer-navigation {
+
+    /* Text */
+    text-align: center;
+
+    a {
+        /* Text */
+        font: {
+            family: $sackers-gothic-std-light;
+            size: rem-calc(25);
+        }
+
+        /* Color */    
+        color: #fff;
+    }
+
+    a:hover, .active a {
+        color: #85fff9;
+    }
+
+    ul, li {
+
+        /* Display & Box Model */
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        /* List */
+        list-style: none;
+    }
+
+    li {
+        /* Display & Box Model*/
+        padding: 0;
+
+        @include breakpoint(small only) {
+            /* Display & Box Model*/
+            display: block;
+        }
+    }
+
+    li:after {
+        /* Display & Box Model*/
+        display: inline-block;
+        margin: 0 rem-calc(30);
+
+        /* Color */
+        color: #fff;
+
+        /* Other */
+        content: "|";
+
+        @include breakpoint(small only) {
+            /* Other */
+            content: none;
+        }
+    }
+
+    li:last-child:after {
+        /* Other */
+        content: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    @include breakpoint(small only) {
+        position: relative;
+        min-height: 40px;
+
+        ul {
+            text-align: center;
+            padding: 0 rem-calc(5);
+            border: solid 1px #fff;
+            background: url(../img/icon-menu-white.png) no-repeat rem-calc(15) rem-calc(18);
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0,0,0,.3);
+        }
+
+        li {
+            display: none;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            padding: 0 rem-calc(5) rem-calc(6) 32px;
+            text-align: left;
+        }
+
+        .navigation {
+            display: block;
+        }
+
+        .active a {
+            background: none;
+            color: #85fff9;
+        }
+
+
+        ul:hover li {
+            display: block;
+            margin: 0 0 5px;
+        }
+    }
+}
+
+/* Site Map Component
+   ========================================================================== */
+.site-map-wrapper
+{
+    @include clearfix();
+
+    /* Color */
+    background-color: #7f7c67;
+}
+
+.site-map-container {
+    /* Display & Box Model */
+    border-bottom:  1px solid #e5e5e2;
+    border-top: 1px solid #e5e5e2;
+    margin: rem-calc(10) 0;
+    padding: rem-calc(62) 0 rem-calc(18);
+
+    /* Fixed Width in PX! */
+    .site-logo img {
+        /* Display & Box Model */
+        width: 316px;
+        height: auto;
+    }
+
+}
+
+.site-map-section {
+
+    /* Display & Box Model */
+    margin-top: rem-calc(33);
+    padding: 0 rem-calc(72);
+    
+    ul {
+        /* List */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        /* Color */
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        /* Text */
+        color: #85fff9;
+        text-decoration: underline;
+    }
+
+
+    .column {
+        /* Display & Box Model */
+        margin-bottom: rem-calc(20);
+        padding: 0 rem-calc(20) 0 0;
+    }
+
+    @include breakpoint(medium only) {
+        /* Display & Box Model */
+        padding: 0 rem-calc(50);
+    }
+
+    @include breakpoint(small only) {
+        /* Display & Box Model */
+        padding: 0 rem-calc(15);
+    }
+
+}
+
+/* Copyright and Social Medias Component
+   ========================================================================== */
+.copyright-and-social-medias {
+    /* Display & Box Model */
+    display: table;
+    width: 100%;
+    padding: rem-calc(18) rem-calc(37) rem-calc(18) rem-calc(56);
+
+    @include breakpoint(medium only) {
+        padding: rem-calc(18) rem-calc(0) rem-calc(18) rem-calc(36);
+    }
+
+    @include breakpoint(small only) {
+        padding: rem-calc(18) 0;
+    }
+
+    .social-medias, .copyright {
+        /* Display & Box Model */
+        display: table-cell;
+        padding: 0 rem-calc(15);
+
+        @include breakpoint(small only) {
+            padding: 0 rem-calc(10);
+        }
+
+        /* Other */
+        vertical-align: middle;
+    }
+
+    @include breakpoint(large) {
+        .social-medias {
+            width: 67%;
+        }
+
+        .copyright {
+            width: 33%;
+        }
+    }
+
+    @include breakpoint(medium only) {
+        .social-medias {
+            width: 50%;
+        }
+
+        .copyright {
+            width: 50%;
+        }
+    }
+
+    @include breakpoint(small only) {
+        /* Display & Box Model */
+        display: block;
+
+        /* Text */
+        text: {
+            align: center;
+        }
+
+        .social-medias, .copyright {
+            /* Display & Box Model */
+            width: 100%;
+            display: block;
+        }
+
+        .copyright {
+            padding-top: rem-calc(20);
+        }
+    }
+}
+
+.copyright-and-social-medias .social-medias {
+
+    ul, li {
+        /* Display & Box Model */
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+}
+
+.copyright-and-social-medias .copyright{
+
+    p {
+        /* Display & Box Model */
+        margin: 0 0 rem-calc(12) 0;
+    }
+
+    p:last-child {
+        /* Display & Box Model */
+        margin: 0;
+    }
+
+    /* Font */
+    font: {
+        family: $open-sans;
+        size: rem-calc(12);
+    }
+
+    /* Color */
+    color: #3b403c;
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merrimans Hawaii</title>
+    <link rel="stylesheet" href="{{assets_css}}style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body class="{{body_class}} merrimans-hawaii-theme">
+    <div id="page_container">
+      <div id="site_container">
+        <header id="site_header">
+          <div class="site-header-wrapper clearfix"><!-- I can add .row and it will work! -->
+            <div class="float-left">
+              <h1 class="site-name"><a href="/"><img src="{{assets_img}}wedding_merrimas_logo.png" alt="Merriman's" title="Merriman's" /></a></h1>
+            </div><!-- end .float-left -->
+            <div class="float-right">
+              <div class="social-media-list right">
+                <ul>
+                  <li><a href="#"><img src="{{assets_img}}facebook.png" alt="Facebook" title="Facebook"/></a></li>
+                  <li><a href="#"><img src="{{assets_img}}twitter.png" alt="Twitter" title="Twitter"/></a></li>
+                  <li><a href="#"><img src="{{assets_img}}instagram.png" alt="Instagram" title="Instagram"/></a></li>
+                  <li><a href="#"><img src="{{assets_img}}pinterest.png" alt="Pinterest" title="Pinterest"/></a></li>
+                </ul>
+              </div>
+              <nav class="site-navigation">
+                <ul class="menu">
+                {% include 'common/top_menu_links.inc.html' with { menu: menu } %} 
+                </ul>
+              </nav>
+            </div><!-- end .float-right -->
+          </div><!-- end .site-header-wrapper -->
+        </header><!-- end #site_header -->

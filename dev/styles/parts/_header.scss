@@ -1,0 +1,115 @@
+/* ==========================================================================
+                                Site Header Styles
+   ========================================================================== */
+
+/**
+ * COMPONENTS SUMMARY
+ * 
+ * - Site Navigation Component
+ * - Social Media List
+ *
+ */
+
+#site_header {
+    /* Positioning */
+    position: absolute;
+    top: rem-calc(20);
+    left: 0;
+    right: 0;
+
+    /* Display & Box Model */
+    width: 100%;
+    padding: 0 rem-calc(20);
+
+    /* Other */
+    z-index: 1;
+}
+
+/* Site Navigation Component
+   ========================================================================== */
+.site-navigation {
+
+    /* Display & Box Model */
+    display: inline-block;
+
+    ul, li {
+        /* Display & Box Model */
+        display: inline-block;
+        padding: 0 rem-calc(2);
+        margin: 0;
+
+        /* List */
+        list-style: none;
+    }
+
+    li a {
+        /* Text */
+        font-family: $sackers-gothic-std-light;
+        font-weight: 500;
+        font-size: rem-calc(25);
+
+        /* color */
+        color: #16140e;
+    }
+
+    li a:hover, .active a {
+        color: #31e3da;
+    }
+
+    li {
+        margin: 0 rem-calc(10);
+    }
+
+    li:first-child {
+        margin-left: 0;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+}
+
+.site-name {
+    margin-bottom: rem-calc(150);
+}
+
+/* Social Media List
+   ========================================================================== */
+.social-media-list {
+
+    margin-bottom: rem-calc(35);
+
+    ul, li {
+        /* Display & Box Model */
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+
+        /* List */
+        list-style: none;
+    }
+
+    li {
+        margin: 0 rem-calc(15);
+    }
+
+    li:first-child {
+        margin-left: 0;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-media-list.left {
+    text-align: left;
+}
+
+.social-media-list.right {
+    text-align: right;
+}
+
+.social-media-list.center {
+    text-align: center;
+}

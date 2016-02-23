@@ -1,0 +1,23 @@
+{
+  "name": "theme-wedding-by-merrimans",
+  "description": "theme-wedding-by-merrimans",
+  "main": "script.js",
+  "authors": [
+    "Bruno Lebtag <brlebtag@gmail.com>"
+  ],
+  "license": "UNLICENSED",
+  "moduleType": [],
+  "homepage": "http://lebtag.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation-sites": "~6.1.2",
+    "owlcarousel": "^1.3.2"
+  }
+}

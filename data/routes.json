@@ -1,0 +1,12 @@
+{
+  "index" : {
+    "path": "/",
+    "method": "GET",
+    "controller": "content"
+  },
+  "about_us" : {
+    "path": "/about-us/",
+    "method": "GET",
+    "controller": "content"
+  }
+}

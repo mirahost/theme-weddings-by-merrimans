@@ -1,0 +1,26 @@
+{% include 'common/header.html' with {body_class: 'home'} %}
+<div class="owl-panel-carousel-wrapper">
+    <div id="home_page_carousel" data-elephant-carousel>
+      <div class="item"><img src="{{assets_img}}wedding1.jpg" alt="Wedding Slider 1" title="Wedding Slider 1"/></div>
+      <div class="item"><img src="{{assets_img}}wedding2.jpg" alt="Wedding Slider 2" title="Wedding Slider 2"/></div>
+    </div>
+    <div class="owl-panel bottom left" data-owl-panel="#home_page_carousel">
+        <div class="owl-panel-control">
+            <img src="{{assets_img}}left-arrow.png" data-owl-prev alt="Previous" title="Previous Slide"/>
+        </div>
+        <div class="owl-panel-info">
+            <ul class="owl-panel-pagination">
+                <li>
+                    “Dramatic locations inspire life long memories.”
+                </li>
+                <li>
+                    “Very Big Lorem Ipsum.”
+                </li>
+            </ul>
+        </div>
+        <div class="owl-panel-control">
+            <img src="{{assets_img}}right-arrow.png" data-owl-next alt="Next" title="Next Slide"/>
+        </div>
+    </div>
+</div>
+{% include 'common/footer.html' %}

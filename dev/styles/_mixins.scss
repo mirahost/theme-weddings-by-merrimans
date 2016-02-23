@@ -1,0 +1,49 @@
+/* ==========================================================================
+                                    Mixins
+   ========================================================================== */
+
+/* Add an Underneath Bar */
+@mixin fn-underneath-bar($color: #000, $width: 100%, $thickness: 1px, $bottom: 5, $position: 'center')
+{
+    /* Positionining */
+    position: relative;
+
+    &:after {
+        /* Display & Box Model */
+        display: block;
+        width: $width;
+        height: $thickness;
+
+        /* Positionining */
+        position: absolute;
+        @if($position == 'center')
+        {
+            left: ((100% - $width) / 2);
+        }
+        @else if($position == 'left')
+        {
+            left: 0;
+        }
+        @else if($position == 'right')
+        {
+            right: 0;
+        }
+        bottom: rem-calc(-$bottom);
+        
+        /* Color */
+        background-color: $color;
+
+        /* Other */
+        content: "";
+    }
+}
+
+/* Simple List: without margin, padding and list-style */
+@mixin fn-dried-list() {
+    /* Display & Box Model */
+    margin: 0;
+    padding: 0;
+
+    /* List */
+    list-style: none;
+}

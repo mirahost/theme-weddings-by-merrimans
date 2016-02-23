@@ -1,0 +1,46 @@
+/* ==========================================================================
+                                Site Styles
+   ========================================================================== */
+@import "bootstrap";
+
+/* Global Styles or Styles that must comme first than others
+   ========================================================================== */
+.row .row {
+    margin: 0;
+}
+
+html {
+    @include breakpoint(medium only) {
+        font-size: rem-calc(14);
+    }
+
+    @include breakpoint(small only) {
+        font-size: rem-calc(12);
+    }
+}
+
+body {
+    /* Color */
+    background-image: 
+        url(../img/bg_logo.png),
+        url(../img/bg.jpg);
+    background-repeat: 
+        no-repeat, 
+        repeat;
+    background-position: 
+        100% -50%,
+        0% 0%;
+}
+
+#site_container {
+    /* Positioning */
+    position: relative;
+}
+
+/* Styles per Page or Component's Style
+   ========================================================================== */
+@import "parts/header.scss";
+@import "parts/footer.scss";
+@import "parts/common.scss";
+@import "pages/home.scss";
+@import "pages/about-us.scss";

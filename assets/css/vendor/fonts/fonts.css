@@ -1,0 +1,68 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3107307, 2015-10-13T13:33:33-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ParfumerieScriptPro by Typesenses
+ * URL: http://www.myfonts.com/fonts/typesenses/parfumerie-script-pro/pro/
+ * Copyright: Copyright (c) 2011 by Typesenses. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: SackersGothicStd-Light by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/sackers-gothic/std-light/
+ * Copyright: Copyright 1994, 2003 Monotype Imaging, Inc. All rights reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: SackersLightRomanAlt by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/sackers-roman/alt/
+ * Copyright: Digitized data (C) 2003 Agfa Monotype Corporation.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: SackersHeavyRomanAlt by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/sackers-roman/sackers-heavy-roman-alt-49470/
+ * Copyright: Digitized data (C) 2003 Agfa Monotype Corporation.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: SackersLightRoman by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/sackers-roman/sackers-light-roman/
+ * Copyright: Digitized data (C) 2003 Agfa Monotype Corporation.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: SackersHeavyRoman by Monotype 
+ * URL: http://www.myfonts.com/fonts/mti/sackers-roman/sackers-heavy-roman-49470/
+ * Copyright: Digitized data (C) 2003 Agfa Monotype Corporation. 
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3107307
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2f69eb");
+
+  
+@font-face {font-family: 'ParfumerieScriptPro';src: url('webfonts/2F69EB_0_0.eot');src: url('webfonts/2F69EB_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F69EB_0_0.woff2') format('woff2'),url('webfonts/2F69EB_0_0.woff') format('woff'),url('webfonts/2F69EB_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SackersGothicStd-Light';src: url('webfonts/2F69EB_1_0.eot');src: url('webfonts/2F69EB_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F69EB_1_0.woff2') format('woff2'),url('webfonts/2F69EB_1_0.woff') format('woff'),url('webfonts/2F69EB_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SackersLightRomanAlt';src: url('webfonts/2F69EB_2_0.eot');src: url('webfonts/2F69EB_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F69EB_2_0.woff2') format('woff2'),url('webfonts/2F69EB_2_0.woff') format('woff'),url('webfonts/2F69EB_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SackersHeavyRomanAlt';src: url('webfonts/2F69EB_3_0.eot');src: url('webfonts/2F69EB_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F69EB_3_0.woff2') format('woff2'),url('webfonts/2F69EB_3_0.woff') format('woff'),url('webfonts/2F69EB_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SackersLightRoman';src: url('webfonts/2F69EB_4_0.eot');src: url('webfonts/2F69EB_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F69EB_4_0.woff2') format('woff2'),url('webfonts/2F69EB_4_0.woff') format('woff'),url('webfonts/2F69EB_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'SackersHeavyRoman';src: url('webfonts/2F69EB_5_0.eot');src: url('webfonts/2F69EB_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F69EB_5_0.woff2') format('woff2'),url('webfonts/2F69EB_5_0.woff') format('woff'),url('webfonts/2F69EB_5_0.ttf') format('truetype');}
+ 
