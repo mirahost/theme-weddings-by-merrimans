@@ -12,6 +12,11 @@
 
 #site_header {
     /* Positioning */
+    position: relative;
+}
+
+.site-header-wrapper {
+    /* Positioning */
     position: absolute;
     top: rem-calc(20);
     left: 0;

@@ -11607,171 +11607,9 @@ if (typeof Object.create !== "function") {
         startDragging : false,
         afterLazyLoad: false
     };
-}(jQuery, window, document));;/* ==========================================================================
-                            Elephant Carousel Component
-   ========================================================================== */
-
-/* 
-    Insert a single item slide that has the same height of the window.
-    it will resizes according to the window as well.
-*/
-
-var ElephantCarousel = function() {};
-
-ElephantCarousel.init = function() {
-    $('[data-elephant-carousel]').each(function(){
-        $(this).height($(window).height());
-
-        $(this).addClass('owl-carousel owl-theme elephant-carousel');
-
-        $(this).owlCarousel({
-            singleItem : true,
-            autoPlay : true,
-
-            transitionStyle: "fade",
-            // Navigation
-            navigation : false,
-            //Pagination
-            pagination : false,
-
-            mouseDrag: false,
-
-            touchDrag: false
-        });
-    });
-
-    $(window).resize(function(){
-        $('[data-elephant-carousel]').each(function(){
-            $(this).height($(window).height());
-        });      
-    });
-};;/* ==========================================================================
-                        Owl Pane Component
-   ========================================================================== */
-
-var OwlPanel = function() {};
-
-OwlPanel.setCurrentActive = function(owlPanel, current)
-{
-    owlPanel.find('.owl-panel-pagination li:nth-child('+current+')')
-        .addClass('active')
-        ;
-};
-
-OwlPanel.removeCurrentActive = function(owlPanel)
-{
-    owlPanel.find('.owl-panel-pagination li.active').removeClass('active');
-};
-
-OwlPanel.init = function() {
-    $('[data-owl-panel]').each(function(){
-        /* Get the Current Panel */
-        var owlPanel = $(this);
-
-        /* Get the Owl Carousel to control */
-        var carousel = $(owlPanel.data('owl-panel')).data('owlCarousel');
-
-        OwlPanel.setCurrentActive(owlPanel, carousel.owl.currentItem+1);
-
-        carousel.reinit({
-            afterMove: function() {
-                OwlPanel.removeCurrentActive(owlPanel);
-
-                OwlPanel.setCurrentActive(owlPanel, this.owl.currentItem+1);
-            }
-        });
-
-        /* Set function to move the carousel to the previous slide */
-        owlPanel.find('[data-owl-prev]').click(function(){
-            carousel.prev();
-        });
-
-        /* Set function to move the carousel to the next slide */
-        owlPanel.find('[data-owl-next]').click(function(){
-            carousel.next();
-        });
-    });
-};;/* ==========================================================================
-                                Gmap Component
-   ========================================================================== */
-
-/* Resize Class Declaration */
-var Gmap = function() {};
-
-/* Gmap init: Load google map api and attach a map to all data-gmap element */
-Gmap.init = function() {
-
-    var els = $('[data-gmap]');
-
-    if(els.length <= 0 ) 
-        return;
-
-    $.getScript('//maps.google.com/maps/api/js', function(){
-
-        els.each(function(){
-
-            try{
-                var el = $(this);
-
-                var coord = el.data('coord').split(',');
-
-                var lat = coord[0], lon = coord[1];
-
-                var zoom = el.data('zoom');
-
-                zoom = zoom == undefined || zoom == "" ? 15 : zoom;
-
-                Gmap.add(el, lat, lon, zoom);
-
-            }catch(e){
-                console.log(e.stack);
-            }
-        });
-
-    });
-};
-
-/* Gmap add: Attach a map to all an element */
-Gmap.add = function(obj, lat, lon, zoom) {
-
-    var coord = new google.maps.LatLng(lat, lon);
-
-    var options = {
-        zoom: zoom,
-        center: coord,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-    };
-
-    var container = $('<div class="gmap-container"></div>');
-
-    if(obj.is('[data-height]'))
-    {
-        container.css('height', obj.data('height'));
-    }
-
-    if(obj.is('[data-flex]'))
-    {
-        container.addClass('flex-video');
-    }
-
-    var map = new google.maps.Map(container.get(0), options);
-
-    var marker = new google.maps.Marker({
-        position: coord,
-        map: map
-    });
-
-    $(window).resize(function(){
-        google.maps.event.trigger(map,'resize');
-        map.setZoom( map.getZoom() );
-        map.setCenter(marker.getPosition());
-    });
-
-    container.appendTo(obj);
-
-    return [map, marker];
-};;/* ==========================================================================
-                                Helpers Scripts
+}(jQuery, window, document));;
+/* ==========================================================================
+                                Utilities Scripts
    ========================================================================== */
 
 /* check if $el exists in the dom */
@@ -11790,6 +11628,16 @@ function is_function($fn)
 function is_array($arr) 
 {
     return $arr instanceof Array;
+}
+
+/* check if $n is numeric: float or int */
+function is_numeric($n) {
+  return !isNaN(parseFloat($n)) && isFinite($n);
+}
+
+/* check if $n is integer */
+function is_integer($n) {
+  return $n === parseInt($n, 10);
 }
 
 /* Visit a URL */
@@ -11828,12 +11676,6 @@ function post($data, $url, $fn_success, $fn_failure, $dataType)
         success: $fn_success,
         error: $fn_failure
     });
-}
-
-
-function make_google_map($obj, $coords, $wrapper)
-{
-    $wrapper = default_value($wrapper, 'gmap-wrapper');
 }
 
 function make_pair($first, $second)
@@ -11921,13 +11763,123 @@ $.fn.serializeObject = function()
     });
     return o;
 };;/* ==========================================================================
+                            Elephant Carousel Component
+   ========================================================================== */
+
+/* 
+ *  Insert a single item slide Owl Carousel that has the same height of the window.
+ *  Elephant Carousel will resize according to the window as well.
+ *  
+ *  You need to add data-elephant-carousel to the component that will hold the carousel.
+ *
+ *  IT IS NECESSARY TO EXECUTE ElephantCarousel.init() TO BOOT THE SYSTEM.
+ */
+
+var ElephantCarousel = function() {};
+
+ElephantCarousel.init = function() {
+    $('[data-elephant-carousel]').each(function(){
+        $(this).height($(window).height());
+
+        $(this).addClass('owl-carousel owl-theme elephant-carousel');
+
+        $(this).owlCarousel({
+            singleItem : true,
+            
+            autoPlay : true,
+
+            transitionStyle: "fade",
+            // Navigation
+            navigation : false,
+            //Pagination
+            pagination : false,
+
+            mouseDrag: false,
+
+            touchDrag: false
+        });
+    });
+
+    $(window).resize(function(){
+        $('[data-elephant-carousel]').each(function(){
+            $(this).height($(window).height());
+        });      
+    });
+};;/* ==========================================================================
+                        Owl Pane Component
+   ========================================================================== */
+
+/* 
+ *  Insert a panel over a owl Carousel and control its slide transitions.
+ *  
+ *  The structure is:
+ *
+ * data-owl-panel: it is the container that holds the carousel.
+ * data-owl-prev: when it is clicked to go the previous slide.
+ * data-owl-next: when it is clicked to go the next slide.
+ * data-owl-pagination: it is the container that holds the pagination.
+ *
+ *
+ *  IT IS NECESSARY TO EXECUTE OwlPanel.init() TO BOOT THE SYSTEM.
+ */
+
+var OwlPanel = function() {};
+
+OwlPanel.setCurrentActive = function(owlPanel, current)
+{
+    owlPanel.find('[data-owl-pagination] > *:nth-child('+current+')')
+        .addClass('active')
+        ;
+};
+
+OwlPanel.removeCurrentActive = function(owlPanel)
+{
+    owlPanel.find('[data-owl-pagination] > *.active').removeClass('active');
+};
+
+OwlPanel.init = function() {
+    $('[data-owl-panel]').each(function(){
+        /* Get the Current Panel */
+        var owlPanel = $(this);
+
+        /* Get the Owl Carousel to control */
+        var carousel = $(owlPanel.data('owl-panel')).data('owlCarousel');
+
+        OwlPanel.setCurrentActive(owlPanel, carousel.owl.currentItem+1);
+
+        carousel.reinit({
+            afterMove: function() {
+                OwlPanel.removeCurrentActive(owlPanel);
+
+                OwlPanel.setCurrentActive(owlPanel, this.owl.currentItem+1);
+            }
+        });
+
+        /* Set function to move the carousel to the previous slide */
+        owlPanel.find('[data-owl-prev]').click(function(){
+            carousel.prev();
+        });
+
+        /* Set function to move the carousel to the next slide */
+        owlPanel.find('[data-owl-next]').click(function(){
+            carousel.next();
+        });
+    });
+};;/* ==========================================================================
+                                Home Page Script
+   ========================================================================== */
+
+function home_page_bootstrap()
+{
+
+};/* ==========================================================================
+                                Helpers Scripts
+   ========================================================================== */
+;/* ==========================================================================
                                 Init Script
    ========================================================================== */
 
 $(function(){
-
-    /* Bootstrap Component */
-    Gmap.init();
 
     /* Elephant Carousel Component */
     ElephantCarousel.init();
@@ -11941,11 +11893,3 @@ $(function(){
 /* ==========================================================================
                                 Helper Scripts
    ========================================================================== */
-;/* ==========================================================================
-                                Home Page Script
-   ========================================================================== */
-
-function home_page_bootstrap()
-{
-
-}

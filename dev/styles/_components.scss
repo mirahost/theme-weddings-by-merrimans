@@ -1,0 +1,100 @@
+/* ==========================================================================
+                                Components Styles
+   ========================================================================== */
+
+/**
+ * COMPONENTS SUMMARY
+ * 
+ * - Exhibition Component
+ *
+ */
+
+ /* Exhibition Component
+   ========================================================================== */
+.exhibition {
+
+    /* Color */
+    color: #3b403c;
+
+    > .row > .column:first-child, 
+    > .row > .columns:first-child {
+        /* Display & Box Model */
+        padding-right: rem-calc(42);
+    }
+
+
+    @include breakpoint (medium only) {
+        > .row > .column:first-child, 
+        > .row > .columns:first-child {
+            /* Display & Box Model */
+            padding-right: rem-calc(21);
+        }
+    }
+
+    @include breakpoint (small only) {
+        > .row > .column:first-child, 
+        > .row > .columns:first-child {
+            /* Display & Box Model */
+            padding-right: rem-calc(15);
+        }
+    }
+
+    > .row > .column:last-child, 
+    > .row > .columns:last-child {
+        /* Display & Box Model */
+        padding-left: rem-calc(42);
+    }
+
+    @include breakpoint (medium only) {
+        > .row > .column:last-child, 
+        > .row > .columns:last-child {
+            /* Display & Box Model */
+            padding-left: rem-calc(21);
+        }
+    }
+
+    @include breakpoint (small only) {
+        > .row > .column:last-child, 
+        > .row > .columns:last-child {
+            /* Display & Box Model */
+            padding-left: rem-calc(15);
+        }
+    }
+
+    li {
+        /* Display & Box Model */
+        margin-bottom: rem-calc(23);
+
+        /* List */
+        list-style-image: url(../img/sphere.png);
+    }
+
+    li:last-child {
+        /* Display & Box Model */
+        margin-bottom: 0;
+    }
+
+    a {
+        @include fn-underneath-bar($color: #2d312e);
+
+        /* Color */
+        color: #2d312e;
+    }
+
+    a:hover:after {
+        content: none;
+    }
+}
+
+.exhibition .frame {
+    /* Display & Box Model */
+    padding: rem-calc(11);
+    border: 1px solid #e4e3df;
+    margin: rem-calc(54) auto;
+
+    /* Other */
+    box-shadow: -10px 0px 30px 0px rgba(0, 0, 0, 0.25);
+
+    /* Text */
+    text-align: center;
+}

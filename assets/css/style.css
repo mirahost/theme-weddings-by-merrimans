@@ -1,9 +1,9 @@
 /* ========================================================================== Site Styles ========================================================================== */
 /* ========================================================================== Bootstrap all configurations e Components ========================================================================== */
 /* Site Mixins */
-/* ========================================================================== Mixins ========================================================================== */
-/* Add an Underneath Bar */
-/* Simple List: without margin, padding and list-style */
+/* ========================================================================== Mixins (useful only in the current development) ========================================================================== */
+/** FUNCTIONS SUMMARY  - Fn */
+/* Fn ========================================================================== */
 /* Global Variabels */
 /* ========================================================================== Global Variabels ========================================================================== */
 /* Foundation Framework */
@@ -164,7 +164,7 @@ button { -webkit-appearance: none; -moz-appearance: none; background: transparen
 
 .is-hidden { display: none !important; }
 
-.row { max-width: 74.875rem; margin-left: auto; margin-right: auto; }
+.row { max-width: 75rem; margin-left: auto; margin-right: auto; }
 .row::before, .row::after { content: ' '; display: table; }
 .row::after { clear: both; }
 .row.collapse > .column, .row.collapse > .columns { padding-left: 0; padding-right: 0; }
@@ -650,9 +650,36 @@ p + .stat { margin-top: -1rem; }
 
 /* Site Fonts */
 /* Carousel Plugin */
-/* ========================================================================== Utilities CSS Class and Components ========================================================================== */
-/** COMPONENTS SUMMARY  - Elephant Carousel Component - Owl Panel Component  */
-/* Elephant Carousel Component ========================================================================== */
+/* Utilities Components */
+/* ========================================================================== Utilities CSS Class ========================================================================== */
+/** COMPONENTS SUMMARY  - Centralized Component - Uppercase and Lowercase Helpers - Underneath Bar Function - Dried List Function */
+/* Centralized Component ========================================================================== */
+.centralized { /* Display and Box Model */ display: table; }
+.centralized > * { /* Display and Box Model */ display: table-cell; /* Other */ vertical-align: middle; }
+
+/* Modifiers and Status */
+.centralized.wider { /* Display and Box Model */ width: 100%; }
+
+.centralized.break-on-small-screen { display: block; }
+@media screen and (min-width: 0em) and (max-width: 39.9375em) { .centralized.break-on-small-screen > * { /* Display and Box Model */ display: block; } }
+
+.centralized.break-on-medium-screen { display: block; }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { .centralized.break-on-medium-screen > * { /* Display and Box Model */ display: block; } }
+
+.centralized .align-to-bottom { /* Display and Box Model */ vertical-align: bottom; }
+
+.centralized .align-to-top { /* Display and Box Model */ vertical-align: top; }
+
+.centralized .align-to-baseline { /* Display and Box Model */ vertical-align: baseline; }
+
+/* Uppercase and Lowercase Helpers ========================================================================== */
+.uppercase { text-transform: uppercase; }
+
+.lowercase { text-transform: lowercase; }
+
+/* Underneath Bar Function ========================================================================== */
+/* Dried List Function ========================================================================== */
+/* ========================================================================== Elephant Carousel Component ========================================================================== */
 .elephant-carousel { overflow: hidden; }
 .elephant-carousel::before, .elephant-carousel::after { content: ' '; display: table; }
 .elephant-carousel::after { clear: both; }
@@ -661,7 +688,7 @@ p + .stat { margin-top: -1rem; }
 
 .elephant-carousel .item img { /* Display & Box Model */ width: 100%; height: 100%; /* Other */ -ms-transform: translateX(0); transform: translateX(0); object-fit: cover; }
 
-/* Owl Panel Component ========================================================================== */
+/* ========================================================================== Owl Panel Component ========================================================================== */
 .owl-panel-carousel-wrapper { /* Positioning */ position: relative; }
 
 .owl-panel { /* Positioning */ position: absolute; /* Display & Box Model */ display: table; }
@@ -684,14 +711,34 @@ p + .stat { margin-top: -1rem; }
 @media screen and (min-width: 40em) and (max-width: 63.9375em) { html { font-size: 0.875rem; } }
 @media screen and (min-width: 0em) and (max-width: 39.9375em) { html { font-size: 0.75rem; } }
 
-body { /* Color */ background-image: url(../img/bg_logo.png), url(../img/bg.jpg); background-repeat: no-repeat,  repeat; background-position: 100% -50%, 0% 0%; }
+body { /* Color */ background-image: url(../img/bg.jpg); background-repeat: repeat; background-position: 0% 0%; }
 
 #site_container { /* Positioning */ position: relative; }
 
 /* Styles per Page or Component's Style ========================================================================== */
+/* ========================================================================== Components Styles ========================================================================== */
+/** COMPONENTS SUMMARY  - Exhibition Component  */
+/* Exhibition Component ========================================================================== */
+.exhibition { /* Color */ color: #3b403c; }
+.exhibition > .row > .column:first-child, .exhibition > .row > .columns:first-child, .exhibition > .row > .columns:first-child { /* Display & Box Model */ padding-right: 2.625rem; }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { .exhibition > .row > .column:first-child, .exhibition > .row > .columns:first-child, .exhibition > .row > .columns:first-child { /* Display & Box Model */ padding-right: 1.3125rem; } }
+@media screen and (min-width: 0em) and (max-width: 39.9375em) { .exhibition > .row > .column:first-child, .exhibition > .row > .columns:first-child, .exhibition > .row > .columns:first-child { /* Display & Box Model */ padding-right: 0.9375rem; } }
+.exhibition > .row > .column:last-child, .exhibition > .row > .columns:last-child, .exhibition > .row > .columns:last-child { /* Display & Box Model */ padding-left: 2.625rem; }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { .exhibition > .row > .column:last-child, .exhibition > .row > .columns:last-child, .exhibition > .row > .columns:last-child { /* Display & Box Model */ padding-left: 1.3125rem; } }
+@media screen and (min-width: 0em) and (max-width: 39.9375em) { .exhibition > .row > .column:last-child, .exhibition > .row > .columns:last-child, .exhibition > .row > .columns:last-child { /* Display & Box Model */ padding-left: 0.9375rem; } }
+.exhibition li { /* Display & Box Model */ margin-bottom: 1.4375rem; /* List */ list-style-image: url(../img/sphere.png); }
+.exhibition li:last-child { /* Display & Box Model */ margin-bottom: 0; }
+.exhibition a { /* Positionining */ position: relative; /* Color */ color: #2d312e; }
+.exhibition a:after { /* Display & Box Model */ display: block; width: 100%; height: 1px; /* Positionining */ position: absolute; left: 0%; bottom: -0.3125rem; /* Color */ background-color: #2d312e; /* Other */ content: ""; }
+.exhibition a:hover:after { content: none; }
+
+.exhibition .frame { /* Display & Box Model */ padding: 0.6875rem; border: 1px solid #e4e3df; margin: 3.375rem auto; /* Other */ box-shadow: -10px 0px 30px 0px rgba(0, 0, 0, 0.25); /* Text */ text-align: center; }
+
 /* ========================================================================== Site Header Styles ========================================================================== */
 /** COMPONENTS SUMMARY  - Site Navigation Component - Social Media List  */
-#site_header { /* Positioning */ position: absolute; top: 1.25rem; left: 0; right: 0; /* Display & Box Model */ width: 100%; padding: 0 1.25rem; /* Other */ z-index: 1; }
+#site_header { /* Positioning */ position: relative; }
+
+.site-header-wrapper { /* Positioning */ position: absolute; top: 1.25rem; left: 0; right: 0; /* Display & Box Model */ width: 100%; padding: 0 1.25rem; /* Other */ z-index: 1; }
 
 /* Site Navigation Component ========================================================================== */
 .site-navigation { /* Display & Box Model */ display: inline-block; }
@@ -776,45 +823,39 @@ body { /* Color */ background-image: url(../img/bg_logo.png), url(../img/bg.jpg)
 .copyright-and-social-medias .copyright p { /* Display & Box Model */ margin: 0 0 0.75rem 0; }
 .copyright-and-social-medias .copyright p:last-child { /* Display & Box Model */ margin: 0; }
 
-/* ========================================================================== Components shared among >= 1 page ========================================================================== */
-/** COMPONENTS SUMMARY  - Centralized Component - Uppercase and Lowercase Component  */
-/* Centralized Component ========================================================================== */
-.centralized { /* Display and Box Model */ display: table; }
-.centralized > * { /* Display and Box Model */ display: table-cell; /* Other */ vertical-align: middle; }
+/* ========================================================================== Common CSS and Fixes ========================================================================== */
+/** COMPONENTS SUMMARY  - Top Menu Space Fix - Site Content Wrapper Fix - Site Colors - Site Headers .h-font_name-font_size */
+/* Top Menu Space Fix ========================================================================== */
+body:not(.home) #site_header { height: 20.125rem; }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { body:not(.home) #site_header { height: 37.5rem; } }
+@media screen and (min-width: 0em) and (max-width: 39.9375em) { body:not(.home) #site_header { height: 37.5rem; } }
 
-.centralized.wider { /* Display and Box Model */ width: 100%; }
+/* Site Content Wrapper Fix ========================================================================== */
+#site_content_wrapper { background: #fff; padding: 5.3125rem 0; }
 
-/* Uppercase and Lowercase Component ========================================================================== */
-.uppercase { text-transform: uppercase; }
+/* Site Colors ========================================================================== */
+.arrow-town { /* Color */ color: #7f7c67; }
 
-.lowercase { text-transform: lowercase; }
+.timber-green { color: #3b403c; }
+
+/* Site Headers .h-font_name-font_size ========================================================================== */
+.h-parfumarie-106 { /* Font */ font-family: ParfumerieScriptPro; font-size: 6.625rem; }
+.h-parfumarie-106.squeezed { /* Other */ line-height: 0.4; }
+
+.h-parfumarie-94 { /* Font */ font-family: ParfumerieScriptPro; font-size: 5.875rem; }
+.h-parfumarie-94.squeezed { /* Other */ line-height: 0.4; }
+
+.h-sackers-22 { /* Font */ font-family: SackersGothicStd-Light; font-size: 1.375rem; }
 
 /* ========================================================================== Home Page SCSS ========================================================================== */
-/** COMPONENTS SUMMARY  - Fixing elephant carousel - Fixing Owl Panel   */
-/* Fixing elephant carousel ========================================================================== */
+/** COMPONENTS SUMMARY  - Elephant carousel Fix - Owl Panel Fix  */
+/* Elephant carousel Fix ========================================================================== */
 .home .elephant-carousel, .home .elephant-carousel .item img { /* Positioning */ min-height: 37.5rem; }
 
-/* Fixing Owl Panel  ========================================================================== */
+/* Owl Panel Fix ========================================================================== */
 .owl-panel-info { /* Display & Box Model */ width: 18.75rem; /* Font */ font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; /* Text */ text-align: center; /* Color */ color: #fff; }
 
 /* ========================================================================== Company About Us Page Styles ========================================================================== */
-/** COMPONENTS SUMMARY  - Content Wrapper Component - Dashed Border Component - Stick Menu Component - Banner Component */
-/* Content Wrapper Component ========================================================================== */
-.content-wrapper { /* Display & Box Model */ padding: 1.25rem 6.25rem; /* Font */ font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; /* Color */ background-image: url(../img/bg_logo_gray.png); background-repeat: no-repeat; background-position: 95% 70%; }
-@media screen and (min-width: 40em) and (max-width: 63.9375em) { .content-wrapper { padding: 1.25rem 3.125rem; } }
-@media screen and (min-width: 0em) and (max-width: 39.9375em) { .content-wrapper { padding: 1.25rem 0.9375rem; } }
-.content-wrapper h1 { /* Display & Box Model */ margin: 2.1875rem 0; /* Font */ font-family: SackersHeavyRoman; font-size: 1.5rem; /* Text */ text-transform: uppercase; /* Color */ color: #6b5c20; }
-.content-wrapper p { /* Display & Box Model */ margin-bottom: 3.125rem; }
+.about-us #site_content_wrapper { /* Font */ font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; }
 
-/* Dashed Border Component ========================================================================== */
-.dashed { /* Display & Box Model */ border: none; width: 100%; height: 2px; /* Color */ background: url(../img/dashed.png); background-repeat: repeat-x; }
-
-/* Stick Menu Component ========================================================================== */
-.stick-menu { /* Font */ font-family: SackersGothicStd-Light; font-size: 1.125rem; /* Text */ text-align: center; /* Color */ color: #404041; }
-.stick-menu a { /* Color */ color: #404041; }
-.stick-menu ul, .stick-menu li { /* Display & Box Model */ display: inline-block; margin: 0; padding: 0; /* List */ list-style: none; }
-.stick-menu li:after { /* Display & Box Model */ padding: 0 0 0 0.4375rem; /* Other */ content: '|'; }
-.stick-menu li:last-child:after { /* Other */ content: none; }
-
-#banner { margin-bottom: 1px; }
-#banner .item img { /* Display & Box Model */ max-height: 19.6875rem !important; height: 100%; width: 100%; /* Other */ object-fit: cover; }
+.about-us .fix-top-header { margin-bottom: 2.5rem; }

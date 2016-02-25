@@ -1,45 +1,7 @@
 /* ==========================================================================
-                    Utilities CSS Class and Components
+                                Owl Panel Component
    ========================================================================== */
-
-/**
- * COMPONENTS SUMMARY
- * 
- * - Elephant Carousel Component
- * - Owl Panel Component
- *
- */
-
- /* Elephant Carousel Component
-   ========================================================================== */
-.elephant-carousel {
-    @include clearfix();
-    overflow: hidden;
-}
-
-.elephant-carousel .owl-wrapper-outer,
-.elephant-carousel .owl-wrapper,
-.elephant-carousel .owl-item,
-.elephant-carousel .item {
-    /* Display & Box Model */
-    width: 100%;
-    height: 100%;
-}
-
-.elephant-carousel .item img {
-
-    /* Display & Box Model */
-    width: 100%;
-    height: 100%;
-
-    /* Other */
-    transform: translateX(0);
-    object-fit: cover;
-}
-
- /* Owl Panel Component
-   ========================================================================== */
-
+   
 .owl-panel-carousel-wrapper {
 
     /* Positioning */

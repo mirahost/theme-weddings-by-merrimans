@@ -6,7 +6,7 @@
 @import "mixins";
 
 /* Global Variabels */
-@import "variables";
+@import "globals";
 
 /* Foundation Framework */
 @import "foundation";
@@ -19,4 +19,7 @@
 @import "vendor/owlcarousel/owl.theme.css";
 @import "vendor/owlcarousel/owl.transitions.css";
 
-@import "utilities";
+/* Utilities Components */
+@import "../utilities/utilities";
+@import "../utilities/components/ElephantCarousel";
+@import "../utilities/components/OwlPanel";

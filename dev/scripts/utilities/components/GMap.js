@@ -2,6 +2,18 @@
                                 Gmap Component
    ========================================================================== */
 
+/**
+ * Gmap Component. Add a google map to any component by adding data-gmap and 
+ * data-coord="latitude,longitude". you can also specify the zoom level
+ * by adding data-zoom="level". you can specify a fixed height by adding
+ * data-height or you can specify to use foundation's 'flex-video' css class.
+ * 
+ * The map will be surrounded by a div.gmap-container container.
+ *
+ * IT IS NECESSARY TO EXECUTE Gmap.init() TO BOOT THE SYSTEM. BUT IT IS NOT 
+ * NECESSARY TO ADD GOOGLE MAPS CDN URL. THE PLUGIN WILL ADD AUTOMATICALLY.
+ */
+
 /* Resize Class Declaration */
 var Gmap = function() {};
 

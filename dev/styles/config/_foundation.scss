@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /* Load Framework */
-@import "../bower_components/foundation-sites/scss/foundation.scss";
+@import "../../bower_components/foundation-sites/scss/foundation.scss";
 
 @import "settings"; 
 
@@ -11,6 +11,7 @@
    ========================================================================== */
 
 /* Uncomment only used Components!!! */
+
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;

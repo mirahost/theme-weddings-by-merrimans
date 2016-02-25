@@ -1,7 +1,7 @@
 /* ==========================================================================
                                 Site Styles
    ========================================================================== */
-@import "bootstrap";
+@import "config/boot";
 
 /* Global Styles or Styles that must comme first than others
    ========================================================================== */
@@ -22,13 +22,13 @@ html {
 body {
     /* Color */
     background-image: 
-        url(../img/bg_logo.png),
+        //url(../img/bg_logo.png),
         url(../img/bg.jpg);
     background-repeat: 
-        no-repeat, 
+        //no-repeat, 
         repeat;
     background-position: 
-        100% -50%,
+        //100% -50%,
         0% 0%;
 }
 
@@ -39,8 +39,9 @@ body {
 
 /* Styles per Page or Component's Style
    ========================================================================== */
-@import "parts/header.scss";
-@import "parts/footer.scss";
-@import "parts/common.scss";
-@import "pages/home.scss";
-@import "pages/about-us.scss";
+@import "components";
+@import "header";
+@import "footer";
+@import "common";
+@import "pages/home";
+@import "pages/about-us";

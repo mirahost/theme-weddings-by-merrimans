@@ -1,0 +1,135 @@
+/* ==========================================================================
+                                Utilities CSS Class
+   ========================================================================== */
+
+/**
+ * COMPONENTS SUMMARY
+ * 
+ * - Centralized Component
+ * - Uppercase and Lowercase Helpers
+ * - Underneath Bar Function
+ * - Dried List Function
+ */
+
+/* Centralized Component
+   ========================================================================== */
+.centralized {
+    /* Display and Box Model */
+    display: table;
+
+    > * {
+        /* Display and Box Model */
+        display: table-cell;
+
+        /* Other */
+        vertical-align: middle;
+    }
+}
+
+/* Modifiers and Status */
+
+.centralized.wider {
+    /* Display and Box Model */
+    width: 100%;
+}
+
+.centralized.break-on-small-screen {
+    display: block;
+
+    @include breakpoint(small only) {
+        > * {
+
+            /* Display and Box Model */
+            display: block;
+        }
+    }
+}
+
+.centralized.break-on-medium-screen {
+    display: block;
+
+    @include breakpoint(medium only) {
+        > * {
+
+            /* Display and Box Model */
+            display: block;
+        }
+    }
+}
+
+.centralized .align-to-bottom {
+    /* Display and Box Model */
+    vertical-align: bottom;
+}
+
+.centralized .align-to-top {
+    /* Display and Box Model */
+    vertical-align: top;
+}
+
+.centralized .align-to-baseline {
+    /* Display and Box Model */
+    vertical-align: baseline;
+}
+
+/* Uppercase and Lowercase Helpers
+   ========================================================================== */
+.uppercase {
+    text: {
+        transform: uppercase;
+    }
+}
+
+.lowercase {
+    text: {
+        transform: lowercase;
+    }
+}
+
+/* Underneath Bar Function
+   ========================================================================== */
+@mixin fn-underneath-bar($color: #000, $width: 100%, $thickness: 1px, $bottom: 5, $position: 'center')
+{
+    /* Positionining */
+    position: relative;
+
+    &:after {
+        /* Display & Box Model */
+        display: block;
+        width: $width;
+        height: $thickness;
+
+        /* Positionining */
+        position: absolute;
+        @if($position == 'center')
+        {
+            left: ((100% - $width) / 2);
+        }
+        @else if($position == 'left')
+        {
+            left: 0;
+        }
+        @else if($position == 'right')
+        {
+            right: 0;
+        }
+        bottom: rem-calc(-$bottom);
+        
+        /* Color */
+        background-color: $color;
+
+        /* Other */
+        content: "";
+    }
+}
+
+/* Dried List Function
+   ========================================================================== */
+@mixin fn-dried-list() {
+    /* Display & Box Model */
+    margin: 0;
+    padding: 0;
+
+    /* List */
+    list-style: none;
+}

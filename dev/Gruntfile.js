@@ -28,7 +28,11 @@ module.exports = function(grunt) {
                     './bower_components/foundation-sites/js/foundation.util.mediaQuery.js',
                     './bower_components/foundation-sites/js/foundation.util.timerAndImageLoader.js',
                     './bower_components/owlcarousel/owl-carousel/owl.carousel.js',
-                    './scripts/**/*.js',
+                    './scripts/utilities/utilities.js',
+                    './scripts/utilities/components/ElephantCarousel.js',
+                    './scripts/utilities/components/OwlPanel.js',
+                    './scripts/pages/**/*.js',
+                    './scripts/*.js',
                 ],
                 dest: '../assets/js/script.js',
             }
@@ -40,7 +44,7 @@ module.exports = function(grunt) {
                   style: 'compact',
                 },
                 files: {
-                  '../assets/css/style.css':'./styles/init.scss',
+                  '../assets/css/style.css':'./styles/style.scss',
                 }
             }
         },

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"util",
+				"utilities"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
 				"Ele",
 				"ElephantCarousel"
 			],
@@ -24,16 +36,8 @@
 				"list-style"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
 				"mar",
 				"margin-bottom"
-			],
-			[
-				"margin",
-				"margin-right"
 			],
 			[
 				"in",
@@ -252,34 +256,10 @@
 	"buffers":
 	[
 		{
-			"file": "views/home.html",
+			"file": "dev/styles/config/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 1117,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dev/styles/_utilities.scss",
-			"settings":
-			{
-				"buffer_size": 2013,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dev/scripts/components/OwlPanel.js",
-			"settings":
-			{
-				"buffer_size": 1441,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "dev/scripts/init.js",
-			"settings":
-			{
-				"buffer_size": 628,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -321,46 +301,57 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/assets",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/components",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles"
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/utilities/components"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/components/ElephantCarousel.js",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/components/OwlPanel.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/Gruntfile.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/init.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/utilities/utilities.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/pages/home-page.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/init.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/_bootstrap.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/utilities/_utilities.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/pages/_home.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/parts/_common.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/parts/_header.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/parts/_footer.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/helpers.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/pages/_about-us.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/views/about-us.html",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/_utilities.scss",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/views/common/header.html",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/parts/_header.scss",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/pages/_home.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/components/OwlPanel.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/data/routes.json",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/components/_OwlPanel.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/components/ElephantCarousel.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/components/gmap.js",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/_mixins.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/_foundation.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/components/ElephantCarousel.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/components/OwlPanel.scss",
+		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/styles/_mixins.scss",
+		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/styles/parts/common.scss",
+		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/views/home.html",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/views/common/top_menu_links.inc.html",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/components/CarouselController.js",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/init.scss",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/views/home.html",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/common/header.html",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/_bootstrap.scss",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/scripts/init.js",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location_home.html",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/parts/_footer.scss",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/views/common/footer.html",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/data/pages/home/default.json",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/data/pages/about-us/default.json",
 		"/C/xampp/htdocs/miranium-bit/private/app/config/weddingsbymerrimans.test.json",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/data/routes.json",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/parts/_common.scss",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/views/about-us.html",
 		"/C/xampp/htdocs/miranium-bit/private/app/config/sterlingross.test.json",
 		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/styles/pages/about-us.scss",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/.gitignore",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/bower.json",
-		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/Gruntfile.js",
 		"/C/xampp/htdocs/themes/theme-weddings-by-merrimans/dev/package.json",
 		"/C/Users/brleb/Documents/Development/cordova_tests/CurrencyDog/www/scss/.gitignore",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location_menu.html",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/styles/pages/location-pages-menu.scss",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/styles/parts/common.scss",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/company_locations.html",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/common/grid_component.inc.html",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/company_info.html",
@@ -372,7 +363,6 @@
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/common/menu_links.inc.html",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/company_home.html",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/common/footer.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/styles/_mixins.scss",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/styles/pages/location-pages-list.scss",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/styles/init.scss",
 		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/scripts/init.js",
@@ -444,18 +434,7 @@
 		"/C/tools/padme/padme_components/helpers.py",
 		"/C/tools/padme/padme.py",
 		"/C/tools/padme/padme_components/config.py",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location/poipu/pizza_burger.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location/poipu/fish_house.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location/waimea.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location/kapalua.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/bower_components/foundation-sites/scss/grid/_column.scss",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/home.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/locations.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location_poipu_pizza_burger.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location_poipu_fish_house.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location_waimea.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location_kapalua.html",
-		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/dev/scripts/pages/home-page.js"
+		"/C/xampp/htdocs/themes/theme-merrimans-hawaii/views/location/poipu/pizza_burger.html"
 	],
 	"find":
 	{
@@ -473,6 +452,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"site-header-wrapper",
+			"site_header",
+			"Centralize",
 			"site-header-wrapper",
 			"float",
 			"Charming",
@@ -597,10 +579,7 @@
 			"grid_view_off",
 			"list_layout",
 			"change_mode",
-			"restart_slideshow_size",
-			"grid_view_on",
-			"grid_view_off",
-			"swap_active"
+			"restart_slideshow_size"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -626,44 +605,16 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "views/home.html",
+					"file": "dev/styles/config/_settings.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1117,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								721,
-								721
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "dev/styles/_utilities.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2013,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -676,73 +627,13 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "dev/scripts/components/OwlPanel.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1441,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1441,
-								1441
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "dev/scripts/init.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								600,
-								600
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -807,7 +698,7 @@
 		[
 			[
 				"",
-				"C:\\xampp\\htdocs\\themes\\theme-mirahost\\theme-mirahost.sublime-project"
+				"C:\\xampp\\htdocs\\themes\\theme-merrimans-hawaii\\theme-merrimans-hawaii.sublime-project"
 			]
 		],
 		"width": 380.0

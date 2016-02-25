@@ -4,9 +4,6 @@
 
 $(function(){
 
-    /* Bootstrap Component */
-    Gmap.init();
-
     /* Elephant Carousel Component */
     ElephantCarousel.init();
 

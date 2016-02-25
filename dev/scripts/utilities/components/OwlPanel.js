@@ -2,18 +2,32 @@
                         Owl Pane Component
    ========================================================================== */
 
+/* 
+ *  Insert a panel over a owl Carousel and control its slide transitions.
+ *  
+ *  The structure is:
+ *
+ * data-owl-panel: it is the container that holds the carousel.
+ * data-owl-prev: when it is clicked to go the previous slide.
+ * data-owl-next: when it is clicked to go the next slide.
+ * data-owl-pagination: it is the container that holds the pagination.
+ *
+ *
+ *  IT IS NECESSARY TO EXECUTE OwlPanel.init() TO BOOT THE SYSTEM.
+ */
+
 var OwlPanel = function() {};
 
 OwlPanel.setCurrentActive = function(owlPanel, current)
 {
-    owlPanel.find('.owl-panel-pagination li:nth-child('+current+')')
+    owlPanel.find('[data-owl-pagination] > *:nth-child('+current+')')
         .addClass('active')
         ;
 };
 
 OwlPanel.removeCurrentActive = function(owlPanel)
 {
-    owlPanel.find('.owl-panel-pagination li.active').removeClass('active');
+    owlPanel.find('[data-owl-pagination] > *.active').removeClass('active');
 };
 
 OwlPanel.init = function() {

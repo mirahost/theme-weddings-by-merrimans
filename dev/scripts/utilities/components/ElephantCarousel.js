@@ -3,9 +3,13 @@
    ========================================================================== */
 
 /* 
-    Insert a single item slide that has the same height of the window.
-    it will resizes according to the window as well.
-*/
+ *  Insert a single item slide Owl Carousel that has the same height of the window.
+ *  Elephant Carousel will resize according to the window as well.
+ *  
+ *  You need to add data-elephant-carousel to the component that will hold the carousel.
+ *
+ *  IT IS NECESSARY TO EXECUTE ElephantCarousel.init() TO BOOT THE SYSTEM.
+ */
 
 var ElephantCarousel = function() {};
 
@@ -17,6 +21,7 @@ ElephantCarousel.init = function() {
 
         $(this).owlCarousel({
             singleItem : true,
+            
             autoPlay : true,
 
             transitionStyle: "fade",
